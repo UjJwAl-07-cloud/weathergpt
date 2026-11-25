@@ -25,12 +25,35 @@
 
   <link rel="stylesheet" href="/assets/style.css">
 
+  <!-- WebPage Schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "WebPage",
     "name": "Weather in India",
     "url": "https://weathergpt.in/weather-in-india/"
+  }
+  </script>
+
+  <!-- Breadcrumb Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://weathergpt.in/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Weather in India",
+        "item": "https://weathergpt.in/weather-in-india/"
+      }
+    ]
   }
   </script>
 </head>
@@ -49,6 +72,13 @@
       <a href="/blog/weather-planning-guide/">Blog</a>
     </nav>
   </header>
+
+  <!-- Visible Breadcrumb Navigation -->
+  <nav class="breadcrumbs" aria-label="Breadcrumb">
+    <a href="/">Home</a>
+    <span class="separator">›</span>
+    <span aria-current="page">Weather in India</span>
+  </nav>
 
   <main class="content">
 
